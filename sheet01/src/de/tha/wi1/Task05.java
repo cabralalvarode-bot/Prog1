@@ -19,6 +19,19 @@ public class Task05 {
 		System.out.format("Preis mit 7%% MwSt: ", brutto7Preis);
 		
 		//c
+        float nettoCent = Math.round(nettoPreis * 100);
+       
+		float brutto19Cent = Math.round(nettoCent * 1.19f);
+        float brutto7Cent = Math.round(nettoCent * 1.07f);
+
+		float euro19 = brutto19Cent / 100; 
+		float cent19 = brutto19Cent % 100; 
+		float euro7 = brutto7Cent / 100; 
+		float cent7 = brutto7Cent % 100; 
+
+		System.out.format("%d.%02d", brutto19Cent, brutto7Cent);
+
+		
 		
 		
 	}
